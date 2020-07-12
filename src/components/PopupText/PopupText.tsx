@@ -51,7 +51,7 @@ class PopupText extends React.Component<Props> {
     };
     return (
       <a href="" onClick={createClickHandler(widgetOptions)}>
-        {this.props.text}
+        {this.props.text || this.props.children}
       </a>
     );
   }
